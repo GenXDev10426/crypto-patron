@@ -35,7 +35,7 @@ const CoinsTable = () => {
   const fetchCoins = async () => {
     setLoading(true);
     const { data } = await axios.get(CoinList(currency));
-    console.log(data);
+    // console.log(data);
 
     setCoins(data);
     setLoading(false);
@@ -45,7 +45,7 @@ const CoinsTable = () => {
   useEffect(() => {
     fetchCoins();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currency]);
+  }, [currency,symbol]);
 
   const handleSearch = () => {
     return coins.filter(
