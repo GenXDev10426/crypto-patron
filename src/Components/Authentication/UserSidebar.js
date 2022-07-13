@@ -11,7 +11,7 @@ import { doc, setDoc } from "firebase/firestore";
 const useStyles = makeStyles({
   container: {
     width: 350,
-    padding: 25,
+    padding: 20,
     height: "100%",
     display: "flex",
     flexDirection: "column",
